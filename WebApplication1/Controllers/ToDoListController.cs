@@ -83,56 +83,36 @@ namespace ToDoList2.Api.Controllers
         [HttpPut("UpdateTask/{id}")]
         public IActionResult Put(int id, [FromBody] string taskvalue)
         {
-            var taskToUpdate = new List<ToDoList>
-            {
-                new ToDoList
-                {
-                    TaskId = 105,
-                    TaskName = "Fill tank",
-                    TaskDate = new DateOnly(2024, 10, 15),
-                    IsCompleted = false
-                }
-            };
 
-            if (id <= 0 || id > taskToUpdate.Count)
+            if (id <= 0)
             {
-                return BadRequest("Operation not performed");
+                return BadRequest("Enter an Id value greater than 0");
             }
 
-            var task = taskToUpdate.FirstOrDefault(t => t.TaskId == id);
+            var task = taskList.FirstOrDefault(t => t.TaskId == id);
             if (task == null)
             {
                 return NotFound("Task not found");
             }
 
             task.TaskName = taskvalue;
-            return Ok(taskToUpdate);
+            return Ok(taskList);
         }
 
         // DELETE api/<ToDoListController>/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var taskToDeleteDetails = new List<ToDoList>
-            {
-                new ToDoList
-                {
-                    TaskId = 105,
-                    TaskName = "Fill tank",
-                    TaskDate = new DateOnly(2024, 10, 15),
-                    IsCompleted = false
-                }
-            };
 
-            var taskToDelete = taskToDeleteDetails.FirstOrDefault(t => t.TaskId == id);
+            var taskToDelete = taskList.FirstOrDefault(t => t.TaskId == id);
             
             if (taskToDelete == null)
             {
                 return NotFound($"Task with ID {id} not found.");
             }
 
-            taskToDeleteDetails.Remove(taskToDelete);
-            return Ok(taskToDeleteDetails);
+            taskList.Remove(taskToDelete);
+            return Ok(taskList);
         }
     }
 }

@@ -30,3 +30,4 @@ C:\Users\tiber\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\ref
 C:\Users\tiber\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\ToDoList2.Api.pdb
 C:\Users\tiber\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\ToDoList2.Api.genruntimeconfig.cache
 C:\Users\tiber\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\ToDoList2.Api.dll
+C:\Users\tiber\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\ToDoList2.Api.sourcelink.json
