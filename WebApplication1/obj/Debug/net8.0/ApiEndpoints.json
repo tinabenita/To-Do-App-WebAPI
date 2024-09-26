@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "ToDoList2.Api.Controllers.ToDoListController",
+    "Method": "Delete",
+    "RelativePath": "ToDoList/ToDoList/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoList2.Api.Controllers.ToDoListController",
+    "Method": "CreateTask",
+    "RelativePath": "ToDoList/ToDoList/CreateTask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "myTask",
+        "Type": "ToDoList2.Api.ToDoList",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoList2.Api.Controllers.ToDoListController",
+    "Method": "Put",
+    "RelativePath": "ToDoList/ToDoList/UpdateTask/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "taskvalue",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoList2.Api.Controllers.ToDoListController",
+    "Method": "Get",
+    "RelativePath": "ToDoList/ToDoList/ViewAllTasks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoList2.Api.Controllers.ToDoListController",
+    "Method": "Get",
+    "RelativePath": "ToDoList/ToDoList/ViewTask/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
